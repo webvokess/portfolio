@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600&display=swap");
+@import "./Reset.module.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dark_glass {
+    /* background: linear-gradient(
+      170.26deg,
+      rgba(48, 48, 48, 1) 20%,
+      rgba(48, 48, 48, 0) 100%
+    ); */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 30px;
+    padding-top: 70px;
+
+    background: linear-gradient(170.26deg, #303030 0%, rgba(48, 48, 48, 0) 100%);
+    filter: drop-shadow(0px 12px 35px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(20px);
+  }
+
+  .button_primery_console p {
+    background-color: theme("colors.yellow-700");
+  }
+
+  .button_primery_console svg path {
+    fill: theme("colors.yellow-700");
+  }
+
+  .button_primery_console:hover p {
+    background-color: theme("colors.yellow-900");
+    transition: 0.3s background ease;
+    -webkit-transition: 0.3s background ease;
+    -moz-transition: 0.3s background ease;
+    -ms-transition: 0.3s background ease;
+    -o-transition: 0.3s background ease;
+  }
+
+  .button_primery_console:hover svg path {
+    fill: theme("colors.yellow-900");
+    transition: 0.3s fill ease;
+    -webkit-transition: 0.3s fill ease;
+    -moz-transition: 0.3s fill ease;
+    -ms-transition: 0.3s fill ease;
+    -o-transition: 0.3s fill ease;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* animations for loader */
+  .animate-spin-robot {
+    animation: spin 3s linear infinite;
+    -webkit-animation: spin 3s linear infinite;
+  }
+
+  .fade-out-animation-loader {
+    animation: fadeOut 1s linear;
+    -webkit-animation: fadeOut 1s linear;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.three-label--hidden {
+  opacity: 0;
+}
+
+.three-label--block {
+  opacity: 1;
+}
+
+.text-glow {
+  -webkit-text-stroke: 0.5px theme("colors.yellow-900");
+  font-weight: 300;
+  font-family: "Oswald";
+  text-shadow: rgba(237, 12, 12, 1) 0px 0px 10px;
+  z-index: -2;
+  display: block;
+  position: relative;
+  font-size: 16px;
+}
+.text-glow--blinking {
+  animation: blinking 3s linear infinite;
+  -webkit-animation: blinking 3s linear infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.border_rounded_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-style: solid;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  cursor: pointer;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transition: 0.3s background ease-in;
+  -webkit-transition: 0.3s background ease-in;
+  -moz-transition: 0.3s background ease-in;
+  -ms-transition: 0.3s background ease-in;
+  -o-transition: 0.3s background ease-in;
+}
+
+.border_rounded_btn:hover {
+  background: theme("colors.white-1000");
+}
+
+.border_rounded_btn--n {
+}
+
+.svg_edges svg {
+  shape-rendering: crispEdges;
+}
+
+.svg_edges svg path {
+  fill: yellow;
+}
