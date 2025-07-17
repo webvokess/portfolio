@@ -7,7 +7,7 @@ const DateConsoleDynamic = dynamic(
   {
     loading: () => <p>Loading...</p>,
     ssr: false,
-  }
+  } 
 ); 
 
 export default function FooterConsole() {
