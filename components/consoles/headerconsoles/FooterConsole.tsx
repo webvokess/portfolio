@@ -1,6 +1,6 @@
 import React from "react";
 // import DateConsole from "../date/DateConsole";
-import dynamic from "next/dynamic";
+import dynamic from "next/dynamic"; 
 
 const DateConsoleDynamic = dynamic(
   () => import("../date/DateConsole"),
