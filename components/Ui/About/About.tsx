@@ -1,5 +1,5 @@
 import React from "react";
-import ConsoleSecction from "../Container/ConsoleSecction";
+import ConsoleSecction from "../Container/ConsoleSecction"; 
 import CommandLine from "@/components/common/consoles/console_lines/CommandLine";
 import HeaderLine from "@/components/common/consoles/console_lines/HeaderLine";
 import BodyLine from "@/components/common/consoles/console_lines/BodyLine";
