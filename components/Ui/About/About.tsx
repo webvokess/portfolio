@@ -3,7 +3,7 @@ import ConsoleSecction from "../Container/ConsoleSecction";
 import CommandLine from "@/components/common/consoles/console_lines/CommandLine";
 import HeaderLine from "@/components/common/consoles/console_lines/HeaderLine";
 import BodyLine from "@/components/common/consoles/console_lines/BodyLine";
-import clsx from "clsx";
+import clsx from "clsx";  
 import Table_Console from "@/components/common/consoles/console_lines/Table_Console";
 import PrimaryButton from "@/components/common/buttons/PrimaryButton";
 import { ImPacman } from "react-icons/im";
