@@ -22,7 +22,7 @@ export default function About() {
     description: {
       label: "Level",
       items: [
-        {
+        { 
           prefix: "coffee_lover",
           icon: <AiFillHeart />,
           label: "EXCELENT",
