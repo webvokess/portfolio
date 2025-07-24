@@ -19,7 +19,7 @@ export default function About() {
       label: "HOB",
       items: ["HOB", "LEVEL"],
     },
-    description: {
+    description: { 
       label: "Level",
       items: [
         { 
